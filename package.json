@@ -1,0 +1,33 @@
+{
+  "name": "watermarkjs",
+  "version": "1.0.0",
+  "description": "水印",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuqiyu/watermarkjs.git"
+  },
+  "keywords": [
+    "watermark"
+  ],
+  "author": "liuqiyu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuqiyu/watermarkjs/issues"
+  },
+  "homepage": "https://github.com/liuqiyu/watermarkjs#readme",
+  "dependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.10.0"
+  }
+}
