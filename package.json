@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "commit": "npm run log && git add ./CHANGELOG.md && git cz",
+    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,28 @@
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
-    "eslint": "^8.10.0"
+    "eslint": "^8.10.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "commitizen": "^4.2.4",
+    "commitlint": "^16.2.3",
+    "conventional-changelog-cli": "^2.2.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "right-pad": "^1.0.1",
+    "vue-cli-plugin-commitlint": "^1.0.12"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/vue-cli-plugin-commitlint/lib/cz"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
 }
