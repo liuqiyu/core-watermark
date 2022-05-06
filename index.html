@@ -6,26 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    html,body {
+    html,body, #app {
       height: 100%;
       width: 100%;
     }
   </style>
 </head>
 <body>
-  <script src="./dist/watermark.js"></script>
-
-  <script>
-    console.log(watermark)
-    watermark.load({
-      watermark_txt: '123',
-      watermark_fontsize: '12px',
-      // watermark_x_space: 200,              //水印x轴间隔
-      // watermark_y_space: 80,               //水印y轴间隔
-      watermark_width: 200, // 水印宽度
-      watermark_height: 100, // 水印长度
-      watermark_parent_node: 'watermark_parent_node'
-    })
-  </script>
+  <div id="app"></div>
 </body>
 </html>

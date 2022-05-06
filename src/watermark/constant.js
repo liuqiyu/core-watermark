@@ -18,7 +18,17 @@ export const defaultSettings = {
   watermark_parent_width: 0,      //水印的总体宽度（默认值：body的scrollWidth和clientWidth的较大值）
   watermark_parent_height: 0,     //水印的总体高度（默认值：body的scrollHeight和clientHeight的较大值）
   watermark_parent_node: null,     //水印插件挂载的父元素element,不输入则默认挂在body上
-  monitor: true                   //monitor 是否监控， true: 不可删除水印; false: 可删水印。
+  monitor: true                    //monitor 是否监控， true: 不可删除水印; false: 可删水印。
 }
 
-export const MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+export const forceRemove = false
+
+export const MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver
+
+export const hasObserver = MutationObserver !== undefined
+
+export const option = {
+  childList: true,
+  attributes: true,
+  subtree: true
+}
