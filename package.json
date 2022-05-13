@@ -1,6 +1,6 @@
 {
   "name": "core-watermark",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "水印",
   "main": "dist/index.js",
