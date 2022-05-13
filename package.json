@@ -9,7 +9,7 @@
     "dev": "webpack-dev-server --config build/webpack.dev.js --open",
     "build": "webpack --config build/webpack.build.js",
     "start": "http-server dist",
-    "commit": "npm run log && git add ./CHANGELOG.md && git cz",
+    "commit": "git add ./CHANGELOG.md && git cz && npm run log",
     "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0"
   },
   "repository": {
