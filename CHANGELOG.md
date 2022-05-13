@@ -1,4 +1,4 @@
-## [1.0.1](https://github.com/liuqiyu/watermarkjs/compare/1.0.0...1.0.1) (2022-05-13)
+## [1.0.2](https://github.com/liuqiyu/watermarkjs/compare/1.0.0...1.0.2) (2022-05-13)
 
 ### 🌟 新功能
 范围|描述|commitId
@@ -7,6 +7,8 @@
  - | 31233333 | [deece20](https://github.com/liuqiyu/watermarkjs/commit/deece20)
  - | 3213213213 | [3dd111f](https://github.com/liuqiyu/watermarkjs/commit/3dd111f)
  3213213 | 3123213222 | [8c04d22](https://github.com/liuqiyu/watermarkjs/commit/8c04d22)
+ 444 | 4444444 | [3e300cb](https://github.com/liuqiyu/watermarkjs/commit/3e300cb)
+ - | 55555555 | [20a6a6e](https://github.com/liuqiyu/watermarkjs/commit/20a6a6e)
 
 
 范围|描述|commitId
