@@ -1,15 +1,16 @@
 {
-  "name": "watermarkjs",
+  "name": "core-watermark",
   "version": "1.0.0",
+  "private": false,
   "description": "水印",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config build/webpack.dev.js --open",
     "build": "webpack --config build/webpack.build.js",
     "start": "http-server dist",
     "commit": "npm run log && git add ./CHANGELOG.md && git cz",
-    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 0"
+    "log": "conventional-changelog --config ./node_modules/vue-cli-plugin-commitlint/lib/log -i CHANGELOG.md -s -r 1"
   },
   "repository": {
     "type": "git",
